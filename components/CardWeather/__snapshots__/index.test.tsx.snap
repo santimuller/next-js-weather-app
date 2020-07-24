@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardWeather renders without changes 1`] = `
+<div
+  className="card cursor-pointer text-shadow p-4 mb-4 flex h-32 text-white md:h-64 justify-between items-end bg-default"
+  onClick={[Function]}
+>
+  <div>
+    <h2
+      className="text-lg family-bold"
+    >
+      Caseros
+    </h2>
+    <p>
+      Buenos Aires, Argentina
+    </p>
+  </div>
+  <div
+    className="text-3xl xl:text-4xl"
+  >
+    20
+    °
+  </div>
+</div>
+`;

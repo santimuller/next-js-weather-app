@@ -23,8 +23,12 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## About
+La idea es que se muestra el clima rastreando la localización usando ip-api, junto con el de las 5 ciudades a elección.
+Tambien las cards son seleccionables, podes ver el pronóstico para los próximos 5 días.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Mejoras que haría:
+Implementación de Store: Algo que no me convenció fue pegarle a la API tanto en la home como en la sección /clima, ya que trae la misma data, en caso de usar store (Context,Redux, etc..) o LocalStorage, Cookies quedaria guardada la  data y no pediria 2 veces los datos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Tuve que hacer una lógica fea en el front para cortar el periodo de 7 días a 5 que es lo que se pide! eso hizo que
+tenga que correr un día manual cuando muestro el periodo de pronóstico.

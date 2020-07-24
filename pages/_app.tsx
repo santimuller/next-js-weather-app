@@ -6,15 +6,17 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>A Weather App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Pronóstico en tiempo real, Mira como van a estar el clima en los próximos 5 días de las ciudades más importantes."/>
         <link
           rel="stylesheet"
-          href="cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css"
+          href="//cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css"
         />
       </Head>
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
     </>
   )
 }

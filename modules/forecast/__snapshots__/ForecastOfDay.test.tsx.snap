@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastOfDayItem renders without changes 1`] = `
+<div
+  className="flex justify-between p-4 text-indigo-700 items-center"
+>
+  <p
+    className="family-bold font-bold  w-20 pr-2"
+  >
+    Lunes
+  </p>
+  <div
+    className="family-bold font-bold"
+  >
+    <img
+      alt="icon"
+      src="http://openweathermap.org/img/wn/sarasa.png"
+    />
+  </div>
+  <div
+    className="family-bold font-bold"
+  >
+    20
+    ° - 
+    10
+    °
+  </div>
+</div>
+`;
