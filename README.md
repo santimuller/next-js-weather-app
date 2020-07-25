@@ -2,7 +2,7 @@
 
 
 #### ⚛ Tecnologías
-EL proyecto fue realizado con las tecnologías: NextJS, TypeScript, Tailwindcss, Cypress y Jest, también express para guardar las rutas personalizadas en el servidor.
+El proyecto fue realizado con las tecnologías: NextJS, TypeScript, Tailwindcss, Cypress y Jest, también express para guardar las rutas personalizadas en el servidor.
 Las APIs que se utilizaron fueron las siguientes: OneCall API de openweathermap.org y para conseguir la ubicación del usuario se uso ip-api.com 
 
 ### Sobre el Proyecto
