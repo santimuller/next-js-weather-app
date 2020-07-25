@@ -1,31 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌞 WeatherApp
 
-## Getting Started
 
-First, run the development server:
+#### ⚛ Tecnologías
+EL proyecto fue realizado con las tecnologías: NextJS, TypeScript, Tailwindcss, Cypress y Jest, también express para guardar las rutas personalizadas en el servidor.
+Las APIs que se utilizaron fueron las siguientes: OneCall API de openweathermap.org y para conseguir la ubicación del usuario se uso ip-api.com 
+
+### Sobre el Proyecto
+El proyecto consiste en mostrar el clima de mi ciudad actual rastreando la localización usando ip-api, junto con el de las 5 ciudades a elección. Una vez que se selecciona una ciudad cuenta con el seguimiento expandido del clima durante los próximos 5 días.
+
+## Levantar Entorno
+
+Para correr el proyecto en entorno de test se usa:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
+Para generar el build y luego correr el proyecto en modo producción
+```bash
+yarn build
+yarn start
+```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Una vez que esté corriendo podes entrar desde tu browser de preferencia ingreando a:  [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+###  🧪 Tests
+##### Cypress
+Para correr los test end-to-end con cypress se usa el siguiente comando:
+```bash
+yarn cypress:open
+```
+##### Jest
+Para correr los test unitarios y chequear que los snapshots esten bien:
+```bash
+yarn test
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### Mejoras Pendientes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## About
-La idea es que se muestra el clima rastreando la localización usando ip-api, junto con el de las 5 ciudades a elección.
-Tambien las cards son seleccionables, podes ver el pronóstico para los próximos 5 días.
 
 Mejoras que haría:
 - Implementación de Store: Algo que no me convenció fue pegarle a la API tanto en la home como en la sección /clima, ya que trae la misma data, en caso de usar store (Context,Redux, etc..) o LocalStorage, Cookies quedaria guardada la  data y no pediria 2 veces los datos. 
@@ -41,8 +53,19 @@ Esto haría tambien que no sea necesario pasar los párametros en la uri como po
 
 - En caso de que crezca implementaria Storybook para ver los componentes que tienen que ver con ui
 
-- Cypress para test end-to-end
+- Optimización de imágenes para mejorar la carga, oscurecer un poco las de la home para que el blanco del texto no se pierda con la imágen del fondo y sea más accesible para los usuarios
+- Sacaría los iconos de weatherAPI y usaría unos custom que vayan acorde al diseño
 
-Nota:
-Tuve que hacer una lógica fea en el front para cortar el periodo de 7 días a 5 que es lo que se pide! eso hizo que
+### Notas
+- Tuve que hacer una lógica fea en el front para cortar el periodo de 7 días a 5 que es lo que se pide! eso hizo que
 tenga que correr un día con el index + 1 cuando muestro el periodo de pronóstico,  ya que arrancaba con el día de hoy y esa información se estaba mostrando en el banner previamente.
+- Me pareció muy copada dynamic la funcionalidad de NextJS que funciona como React.lazy() solo que del lado del server
+- Para pedir la data no hice uso de getInitialProps/getServerSideProps que hacen las peticiones en el  server y opte hacerlas en el useEffect para hacerlas client-side. 
+
+
+  
+
+
+
+
+
