@@ -6,7 +6,8 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -27,6 +28,7 @@
     "babel-jest": "^26.1.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "babel-plugin-module-resolver": "^4.0.0",
+    "cypress": "^4.11.0",
     "jest": "^26.1.0",
     "postcss-preset-env": "^6.7.0",
     "react-test-renderer": "^16.13.1",

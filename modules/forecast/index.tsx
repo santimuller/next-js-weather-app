@@ -40,7 +40,7 @@ const ForecastOfCity: FC = ():ReactElement => {
         <div className="text-white family-bold text-lg text-shadow">{region}</div>
         <div className="text-white text-4xl text-shadow flex">
           {weatherData?.current?.temp}° 
-          {weatherData && <img src={`http://openweathermap.org/img/wn/${weatherData?.current?.weather[0].icon}.png`} alt="Icono de clima"/>}
+          {weatherData && <img src={`http://openweathermap.org/img/wn/${weatherData?.current?.weather[0].icon}.png`} alt="Icono de clima" data-testid="external-img"/>}
           </div>
       </div>
 

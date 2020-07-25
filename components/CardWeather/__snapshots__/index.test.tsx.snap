@@ -3,11 +3,12 @@
 exports[`CardWeather renders without changes 1`] = `
 <div
   className="card cursor-pointer text-shadow p-4 mb-4 flex h-32 text-white md:h-64 justify-between items-end bg-default"
+  data-testid="bg-default"
   onClick={[Function]}
 >
   <div>
     <h2
-      className="text-lg family-bold"
+      className="text-xl family-bold"
     >
       Caseros
     </h2>

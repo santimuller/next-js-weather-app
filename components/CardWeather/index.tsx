@@ -28,9 +28,9 @@ const CardWeather :FC<CardWeatherProps> = ({locationData, temp}) :ReactElement =
   }
 
   return(
-    <div className={styles} onClick={handleClick}>
+    <div className={styles} onClick={handleClick} data-testid={bgImage}>
       <div>
-        <h2 className="text-lg family-bold">{locationData?.city}</h2>
+        <h2 className="text-xl family-bold">{locationData?.city}</h2>
         <p>{`${locationData?.regionName}, ${locationData?.country}`}</p>
       </div>
       <div className="text-3xl xl:text-4xl">{temp}°</div>
